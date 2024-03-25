@@ -1,14 +1,12 @@
-import {
-  Container,
-  Header,
-  Lista,
-} from './styles';
+import {Container, Header, Lista, } from './styles';
+
 import feira from './feira.json';
-import Produto from 'components/Produto';
-import { useContext } from 'react';
-import { UsuarioContext } from 'common/contexts/Usuario';
 import NavBar from './NavBar';
 
+import Produto from 'components/Produto';
+
+import { useContext } from 'react';
+import { UsuarioContext } from 'common/contexts/Usuario';
 
 function Feira() {
   const { nome, saldo = 0 } = useContext(UsuarioContext);
@@ -20,7 +18,7 @@ function Feira() {
           <h2> Olá {nome}!</h2>
           <h3> Saldo: R${saldo.toFixed(2)}</h3>
         </div>
-        <p>Encontre os melhores produtos orgânicos!</p>
+        <p>Encontre os melhores produtos orgânicos aqui na Organic Market!</p>
       </Header>
       <Lista>
         <h2>

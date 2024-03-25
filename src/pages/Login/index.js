@@ -1,20 +1,12 @@
 import { Button } from '@material-ui/core';
 
-import {
-  Container,
-  Titulo,
-  InputContainer
-} from './styles';
+import {Container, Titulo, InputContainer} from './styles';
 
 import { useHistory } from 'react-router-dom';
 import { useContext } from 'react';
 import { UsuarioContext } from 'common/contexts/Usuario';
 
-import {
-  Input,
-  InputLabel,
-  InputAdornment 
-} from '@material-ui/core';
+import {Input, InputLabel, InputAdornment } from '@material-ui/core';
 
 function Login() {
   const history = useHistory();
@@ -22,7 +14,7 @@ function Login() {
   
   return (
     <Container>
-      <UsuarioContext>
+      
         <Titulo>
           Insira o seu nome
         </Titulo>
@@ -59,7 +51,7 @@ function Login() {
         >
           Avançar
         </Button>
-      </UsuarioContext>
+      
     </Container>
   )
 };

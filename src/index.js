@@ -1,8 +1,10 @@
 import { ThemeProvider, createTheme } from '@material-ui/core/styles';
 import { StylesProvider } from '@material-ui/core/styles';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Routes from './router';
+
 import './index.css';
 
 const theme = createTheme({
