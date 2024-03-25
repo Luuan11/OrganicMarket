@@ -1,9 +1,14 @@
 import { Button, MenuItem, Select, Snackbar, InputLabel } from '@material-ui/core';
 import MuiAlert from '@material-ui/lab/Alert';
-import { useCarrinhoContext } from 'common/contexts/Carrinho';
+
 import Produto from 'components/Produto';
+
+import { useCarrinhoContext } from 'common/contexts/Carrinho';
+
 import { useContext, useMemo, useState } from 'react';
+
 import { Container, Voltar, TotalContainer, PagamentoContainer} from './styles';
+
 import { useHistory } from 'react-router-dom';
 import { UsuarioContext } from 'common/contexts/Usuario';
 import { usePagamento } from 'common/contexts/Pagamento';

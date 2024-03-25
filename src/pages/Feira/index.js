@@ -12,18 +12,23 @@ function Feira() {
   const { nome, saldo = 0 } = useContext(UsuarioContext);
   return (
     <Container>
+
       <NavBar />
+
       <Header>
         <div>
           <h2> Olá {nome}!</h2>
           <h3> Saldo: R${saldo.toFixed(2)}</h3>
         </div>
-        <p>Encontre os melhores produtos orgânicos aqui na Organic Market!</p>
+        <p>Encontre os melhores produtos na Organic Market!</p>
       </Header>
+
       <Lista>
+
         <h2>
           Produtos:
         </h2>
+
         {feira.map(produto => (
           <Produto
             {...produto}
@@ -31,6 +36,7 @@ function Feira() {
           />
         ))}
       </Lista>
+
     </Container>
   )
 }
